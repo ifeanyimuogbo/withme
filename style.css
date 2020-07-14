@@ -1,0 +1,41 @@
+:root {
+  --purplishBlue: #6250cf;
+  --purple: #9b38eb;
+  --gentleBlue: #0038fd;
+  --white: #ffffff;
+  --deepBlue: #18345f;
+  --primaryBlue: #0062f4;
+  --lightBlueBg: #e5effe;
+}
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #18345f;
+}
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+nav.navbar {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  background: rgba(255, 255, 255, 0);
+}
+nav .btn {
+  color: var(--primaryBlue);
+  border-color: var(--primaryBlue);
+}
+.jumbo {
+  background: var(--lightBlueBg);
+}
+.infodiv {
+  max-width: 657px;
+}

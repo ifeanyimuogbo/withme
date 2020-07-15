@@ -1,3 +1,6 @@
+/* Manrope Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+/* CSS Vars */
 :root {
   --purplishBlue: #6250cf;
   --purple: #9b38eb;
@@ -6,6 +9,10 @@
   --deepBlue: #18345f;
   --primaryBlue: #0062f4;
   --lightBlueBg: #e5effe;
+}
+/* General Styles */
+html {
+  overflow-x: hidden;
 }
 * {
   padding: 0;
@@ -23,7 +30,43 @@ h1 {
   font-weight: bold;
   font-size: 60px;
 }
+p {
+  font-weight: normal;
+  font-size: 24px;
+}
 
+/* Reusable Classes */
+
+.padding-left-10 {
+  padding-left: 10rem;
+}
+.padding-right-10 {
+  padding-right: 10px;
+}
+.vh-90 {
+  height: 90vh;
+}
+.py-max {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.px-max {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.pl-100 {
+  padding-left: 100px;
+}
+.mxw-400 {
+  max-width: 400px;
+}
+.mxw-700 {
+  max-width: 700px;
+}
+.pb-200 {
+  padding-bottom: 200px;
+}
+/* Specific Classes */
 nav.navbar {
   padding-left: 10rem;
   padding-right: 10rem;
@@ -38,4 +81,59 @@ nav .btn {
 }
 .infodiv {
   max-width: 657px;
+}
+
+.previews {
+  padding-top: 300px;
+  padding-bottom: 50px;
+}
+.rect27 {
+  background-image: url(assets/Rectangle27.png);
+  width: 600px;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.rect28 {
+  background-image: url(assets/Rectangle28.png);
+  width: 480px;
+  height: 320px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -135px;
+  left: -219px;
+  z-index: -1;
+}
+.rect29 {
+  background-image: url(assets/Rectangle29.png);
+  width: 480px;
+  height: 320px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -237px;
+  top: -61px;
+  z-index: -1;
+}
+
+.cta {
+}
+.cta-text hr {
+  border-top: 5px solid #0062f4;
+  width: 50px;
+  display: inline-block;
+}
+footer .foot {
+  background-color: var(--lightBlueBg);
+}
+footer .copyrights {
+  background-color: var(--deepBlue);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
 }

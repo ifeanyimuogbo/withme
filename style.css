@@ -92,7 +92,7 @@ nav .btn {
   z-index: 2;
   top: -7%;
   left: -6%;
-  transform: scale(0.85);
+  /* transform: scale(0.85); */
 }
 .mockup {
   position: absolute;

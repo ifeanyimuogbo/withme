@@ -97,9 +97,9 @@ nav .btn {
 .mockup {
   position: absolute;
   z-index: 2;
-  transform: scale(0.7);
-  left: -14%;
-  top: 11%;
+  width: 50vw;
+  left: 1%;
+  top: 36%;
 }
 
 .previews {

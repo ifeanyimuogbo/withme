@@ -12,7 +12,7 @@
 }
 /* General Styles */
 html {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 * {
   padding: 0;
@@ -25,6 +25,7 @@ body {
   font-style: normal;
   font-weight: normal;
   color: #18345f;
+  margin: auto;
 }
 h1 {
   font-weight: bold;
@@ -66,6 +67,9 @@ p {
 .pb-200 {
   padding-bottom: 200px;
 }
+.pos-relative {
+  position: relative;
+}
 /* Specific Classes */
 nav.navbar {
   padding-left: 10rem;
@@ -83,42 +87,43 @@ nav .btn {
   max-width: 657px;
 }
 
+.signal {
+  position: absolute;
+  z-index: 2;
+  top: -7%;
+  left: -6%;
+  transform: scale(0.85);
+}
+.mockup {
+  position: absolute;
+  z-index: 2;
+  transform: scale(0.7);
+  left: -14%;
+  top: 11%;
+}
+
 .previews {
-  padding-top: 300px;
-  padding-bottom: 50px;
-}
-.rect27 {
-  background-image: url(assets/Rectangle27.png);
-  width: 600px;
-  height: 400px;
-  background-position: center center;
-  background-size: cover;
+  padding: 407px 200px 150px 200px !important;
+  background-image: url(./assets/withme.png);
   background-repeat: no-repeat;
-  position: relative;
+  background-position: top 15% right 1px;
+  background-size: 70%;
 }
-.rect28 {
-  background-image: url(assets/Rectangle28.png);
-  width: 480px;
-  height: 320px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -135px;
-  left: -219px;
-  z-index: -1;
+.preview-pane {
+  display: flex;
 }
-.rect29 {
-  background-image: url(assets/Rectangle29.png);
-  width: 480px;
-  height: 320px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: -237px;
-  top: -61px;
-  z-index: -1;
+.rect-27 {
+  transform: scale(1.5);
+  z-index: 3;
+}
+.rect-28 {
+  transform: scale(1.5);
+  margin-top: -123px;
+}
+.rect-29 {
+  transform: scale(1.5);
+  z-index: 2;
+  margin-top: -39px;
 }
 
 .cta {
@@ -128,6 +133,22 @@ nav .btn {
   width: 50px;
   display: inline-block;
 }
+.largecircl {
+  position: absolute;
+  top: -95%;
+  left: 28%;
+  transform: scale(0.9);
+}
+.smallcross {
+  position: absolute;
+  left: 8%;
+}
+.smallccl {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
 footer .foot {
   background-color: var(--lightBlueBg);
 }

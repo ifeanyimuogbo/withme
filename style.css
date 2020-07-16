@@ -148,9 +148,13 @@ nav .btn {
   top: 10%;
   left: 5%;
 }
-
 footer .foot {
   background-color: var(--lightBlueBg);
+}
+
+.px-foot {
+  padding-left: 300px;
+  padding-right: 300px;
 }
 footer .copyrights {
   background-color: var(--deepBlue);

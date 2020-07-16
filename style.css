@@ -106,36 +106,40 @@ nav .btn {
 }
 
 .previews {
-  padding: 407px 200px 150px 200px !important;
+  padding: 300px 12% 50px 12%;
   background-image: url(./assets/withme.png);
   background-repeat: no-repeat;
   background-position: top 15% right 1px;
   background-size: 70%;
 }
 .preview-pane {
+  position: relative;
   display: flex;
+  max-width: 100%;
 }
 .rect-27 {
-  transform: scale(1.5);
   z-index: 3;
 }
 .rect-28 {
-  transform: scale(1.5);
-  margin-top: -123px;
+  margin-right: -38%;
+  margin-top: -15%;
 }
 .rect-29 {
-  transform: scale(1.5);
+  margin-left: -27%;
+  margin-top: 2%;
   z-index: 2;
-  margin-top: -39px;
 }
 
 .cta {
+  max-width: 65vw;
+  margin: auto;
 }
 .cta-text hr {
   border-top: 5px solid #0062f4;
   width: 50px;
   display: inline-block;
 }
+
 .largecircl svg {
   position: absolute;
   top: -96%;
@@ -157,8 +161,8 @@ footer .foot {
 }
 
 .px-foot {
-  padding-left: 15% !important;
-  padding-right: 15% !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
 footer .copyrights {
   background-color: var(--deepBlue);
@@ -168,7 +172,16 @@ footer .copyrights {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 575px) {
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+    margin: auto;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  /* Navbar */
   nav.navbar {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -177,36 +190,123 @@ footer .copyrights {
   .fixed-top {
     position: static;
   }
+
+  /* HERO */
+  .hero {
+    overflow-x: hidden;
+  }
   .whitehero {
-    height: 30vh;
+    height: 30%;
   }
   .signal {
     position: absolute;
     z-index: 2;
-    top: auto;
-    left: auto;
-    right: auto;
-    width: 100%;
+    width: 100vw;
+    top: -47px;
+    left: 10% !important;
     /* transform: scale(0.85); */
   }
   .signal svg {
-    height: auto;
-    display: block;
-    width: 100%;
+    width: 100vw;
+    height: 70vh;
+  }
+  .mockup {
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    transform: scale(1.3);
+    left: 18%;
+    top: 15%;
+  }
+
+  .jumbo {
+    padding-top: 40%;
+  }
+  .infodiv {
+    max-width: 657px;
+  }
+
+  .previews {
+    padding: 120px 3% 50px 3%;
+    background-image: url(./assets/withme.png);
+    background-repeat: no-repeat;
+    background-position: top 15% right 1px;
+    background-size: 70%;
+  }
+  .preview-pane {
+    position: relative;
+    display: flex;
     max-width: 100%;
   }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  nav.navbar {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    background: rgba(255, 255, 255, 0);
+  .rect-27 {
+    z-index: 3;
   }
-  .fixed-top {
-    position: static;
+  .rect-28 {
+    margin-right: -38%;
+    margin-top: -15%;
   }
-  .whitehero {
-    height: 30vh;
+  .rect-29 {
+    margin-left: -27%;
+    margin-top: 2%;
+    z-index: 2;
+  }
+  .ctad.py-max {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .cta {
+    max-width: 90vw;
+    margin: auto;
+  }
+  .cta-text hr {
+    border-top: 5px solid #0062f4;
+    width: 50px;
+    display: inline-block;
+  }
+  .largecircl svg {
+    position: absolute;
+    top: -96%;
+    right: 0;
+    transform: scale(0.95);
+    max-width: 65vw;
+  }
+  .smallcross {
+    position: absolute;
+    left: 8%;
+    left: 60%;
+    top: -14%;
+  }
+  .smallccl {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+
+  .gal.py-max {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .gal.pl-100 {
+    padding-left: 50px;
+  }
+
+  footer .foot {
+    background-color: var(--lightBlueBg);
+  }
+
+  .px-foot {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  .foot.py-max {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  footer .copyrights {
+    background-color: var(--deepBlue);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
   }
 }
 

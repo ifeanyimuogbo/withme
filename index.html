@@ -51,12 +51,11 @@
     </nav>
 
     <!-- HERO -->
-    <div class="vh-100 px-0 mx-0 row" style="position: relative;">
+    <div class="vh-100 px-0 mx-0 row w-100 hero" style="position: relative;">
       <div class="signal">
         <svg
           width="1015"
           height="1206"
-          style="max-height: 150vh;"
           viewBox="0 0 1015 1206"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -149,29 +148,30 @@
     </div>
 
     <!-- Previews Section -->
-    <div class="container-fluid mx-0 previews">
-      <div class="preview-pane">
+    <div class="container-fluid mx-0 previews row">
+      <div class="preview-pane col-12">
         <div class="rect-28">
-          <img src="assets/Rectangle28.png" class="img-fluid d-block" />
+          <img src="assets/Rectangle28.png" class="d-block img-fluid" />
         </div>
+
         <div class="rect-27">
-          <img src="assets/Rectangle27.png" class="img-fluid d-block" />
+          <img src="assets/Rectangle27.png" class="d-block img-fluid" />
         </div>
         <div class="rect-29">
-          <img src="assets/Rectangle29.png" class="img-fluid d-block" />
+          <img src="assets/Rectangle29.png" class="d-block img-fluid" />
         </div>
       </div>
     </div>
 
     <!-- CTA Section -->
-    <div class="container-fluid px-0 mx-0 py-max pos-relative">
-      <div style="max-width: 65vw; margin: auto;">
+    <div class="container-fluid px-0 mx-0 ctad py-max pos-relative">
+      <div class="cta">
         <h1 class="mxw-400">
           Unique App for Awesome Friends.
         </h1>
         <div class="cta-text d-flex justify-content-end">
           <div>
-            <p class="mb-n1 mxw-700">
+            <p class="mb-0 mb-md-n1 mxw-700">
               Get notified when one of your contacts is present near you. Chat
               and talk with them directly from the app.
             </p>
@@ -239,7 +239,7 @@
     </div>
 
     <!-- Gallery Section -->
-    <div class="container-fluid mx-0 row py-max pb-200 pr-0 pl-100">
+    <div class="container-fluid mx-0 row gal py-max pb-200 pr-0 pl-100">
       <div class="col pr-0">
         <h1>Gallery</h1>
         <div id="carousel" class="owl-carousel mt-4">
@@ -284,7 +284,9 @@
 
     <!-- Footer Section -->
     <footer class="container-fluid mx-0 px-0">
-      <div class="d-flex justify-content-between foot py-max px-foot">
+      <div
+        class="d-flex flex-column flex-md-row justify-content-md-between foot py-max px-foot"
+      >
         <h1>Seems interesting?</h1>
         <form class="form-inline">
           <div class="form-group mx-sm-1 mb-2">

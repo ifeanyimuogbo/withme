@@ -195,6 +195,7 @@ footer .copyrights {
   /* HERO */
   .hero {
     overflow-x: hidden;
+    height: 110vh !important;
   }
   .whitehero {
     height: 30%;

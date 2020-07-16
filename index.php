@@ -182,7 +182,7 @@
         </div>
     </footer>
 
-
+    <script src="src/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -194,8 +194,6 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <script src="src/js/owlcarousel/owl.carousel.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
-    <script src="src/js/index.js" async defer></script>
     <script>
     $(document).ready(function() {
         jQuery('#carousel').owlCarousel({
@@ -232,6 +230,10 @@
         });
     });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js">
+    </script>
+
+
 </body>
 
 </html>

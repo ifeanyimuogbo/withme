@@ -108,7 +108,7 @@ nav .btn {
 
 .previews {
   padding: 300px 12% 50px 12%;
-  background-image: url(./assets/withme.png);
+  background-image: url(../../assets/withme.png);
   background-repeat: no-repeat;
   background-position: top 15% right 1px;
   background-size: 70%;

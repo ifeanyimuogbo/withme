@@ -1,16 +1,30 @@
 <?php
-$email = $_POST['email'];
+$email = filter_input(INPUT_POST, 'email');
+$host = "localhost";
+$dbusername = "dev";
+$dbpassword = "development";
+$dbname = "withme";
+$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
-$conn = new mysqli('localhost','root', "", 'hng7');
-if($conn->connect_error){
-    die('connection Failed : '.$conn->connect_error);
-}else{
-    $stmt = $conn -> prepare("insert into email(email)
-     values(?) ");
-     $stmt->bind_param('s',$email);
-     $stmt->execute();
-     echo "registration succesful";
-     $stmt->close();
-     $conn->close();
-}
+if (!empty($email)){
+    
+    // Create connection
+    if (mysqli_connect_error()){
+        die('Connect Error ('. mysqli_connect_errno() .') '
+        . mysqli_connect_error());
+    } else {
+        $sql = "INSERT INTO preregistered (email)
+        values ('$email')";
+        if ($conn->query($sql)){ ?>
+<script>
+alert("Successfully preregistered");
+</script>
+<?php }
+        else{
+            echo "Error: ". $sql ."
+            ". $conn->error;
+        }
+        $conn->close();
+    }
+    }
 ?>

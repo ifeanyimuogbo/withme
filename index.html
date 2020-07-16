@@ -28,6 +28,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -239,22 +243,52 @@
         <h1>Gallery</h1>
         <div id="carousel" class="owl-carousel mt-4">
           <div class="item">
-            <img src="assets/lockscreen.png " class="img-fluid d-block" />
+            <a
+              href="https://withmeapp.herokuapp.com/assets/lockscreen.png"
+              data-lightbox="gallery"
+            >
+              <img src="assets/lockscreen.png " class="img-fluid d-block" />
+            </a>
           </div>
           <div class="item">
-            <img src="assets/Splash.png" class="img-fluid d-block" />
+            <a
+              href="https://withmeapp.herokuapp.com/assets/Splash.png"
+              data-lightbox="gallery"
+            >
+              <img src="assets/Splash.png" class="img-fluid d-block"
+            /></a>
           </div>
           <div class="item">
-            <img src="assets/Home.png" class="img-fluid d-block" />
+            <a
+              href="https://withmeapp.herokuapp.com/assets/Home.png"
+              data-lightbox="gallery"
+            >
+              <img src="assets/Home.png" class="img-fluid d-block"
+            /></a>
           </div>
           <div class="item">
-            <img src="assets/Homeextended.png" class="img-fluid d-block" />
+            <a
+              href="https://withmeapp.herokuapp.com/assets/Homeextended.png"
+              data-lightbox="gallery"
+            >
+              <img src="assets/Homeextended.png" class="img-fluid d-block"
+            /></a>
           </div>
           <div class="item">
-            <img src="assets/Settings.png" class="img-fluid d-block" />
+            <a
+              href="https://withmeapp.herokuapp.com/assets/Settings.png"
+              data-lightbox="gallery"
+            >
+              <img src="assets/Settings.png" class="img-fluid d-block"
+            /></a>
           </div>
           <div class="item">
-            <img src="assets/Settingsprofile.png" class="img-fluid d-block" />
+            <a
+              href="https://withmeapp.herokuapp.com/assets/Settingsprofile.png"
+              data-lightbox="gallery"
+            >
+              <img src="assets/Settingsprofile.png" class="img-fluid d-block"
+            /></a>
           </div>
         </div>
       </div>
@@ -301,6 +335,7 @@
     ></script>
     <script src="jquery.min.js"></script>
     <script src="owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
     <script>
       $(document).ready(function () {
         jQuery('#carousel').owlCarousel({

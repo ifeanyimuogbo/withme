@@ -35,6 +35,9 @@ p {
   font-weight: normal;
   font-size: 24px;
 }
+button:focus {
+  outline: none;
+}
 
 /* Reusable Classes */
 
@@ -133,11 +136,12 @@ nav .btn {
   width: 50px;
   display: inline-block;
 }
-.largecircl {
+.largecircl svg {
   position: absolute;
-  top: -95%;
-  left: 28%;
-  transform: scale(0.9);
+  top: -96%;
+  right: 0;
+  transform: scale(0.95);
+  max-width: 65vw;
 }
 .smallcross {
   position: absolute;

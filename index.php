@@ -193,6 +193,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="src/js/owlcarousel/jquery.min.js"></script>
     <script src="src/js/owlcarousel/owl.carousel.js"></script>
     <script>
     $(document).ready(function() {

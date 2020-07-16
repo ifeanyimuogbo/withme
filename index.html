@@ -38,12 +38,14 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-light bg-faded justify-content-between">
+    <nav
+      class="navbar fixed-top navbar-light bg-faded justify-content-between mt-3"
+    >
       <a class="navbar-brand">
         <img src="assets/logo.svg" />
       </a>
 
-      <button class="btn my-2 my-sm-0" type="submit">
+      <button class="btn" type="submit">
         Pre Register
       </button>
     </nav>
@@ -117,10 +119,9 @@
       <div class="mockup">
         <img src="assets/mockup.png" class="img-fluid" />
       </div>
-      <div class="col" style="z-index: 2;"></div>
-
+      <div class="col-12 col-md-3 whitehero" style="z-index: 2;"></div>
       <div
-        class="col-9 jumbo d-flex justify-content-center align-items-center mr-0"
+        class="col-12 col-md-9 jumbo d-flex justify-content-center align-items-center mr-0"
       >
         <div class="infodiv">
           <h1>Get notified when your friends are near.</h1>
@@ -244,14 +245,6 @@
         <div id="carousel" class="owl-carousel mt-4">
           <div class="item">
             <a
-              href="https://withmeapp.herokuapp.com/assets/lockscreen.png"
-              data-lightbox="gallery"
-            >
-              <img src="assets/lockscreen.png " class="img-fluid d-block" />
-            </a>
-          </div>
-          <div class="item">
-            <a
               href="https://withmeapp.herokuapp.com/assets/Splash.png"
               data-lightbox="gallery"
             >
@@ -266,14 +259,7 @@
               <img src="assets/Home.png" class="img-fluid d-block"
             /></a>
           </div>
-          <div class="item">
-            <a
-              href="https://withmeapp.herokuapp.com/assets/Homeextended.png"
-              data-lightbox="gallery"
-            >
-              <img src="assets/Homeextended.png" class="img-fluid d-block"
-            /></a>
-          </div>
+
           <div class="item">
             <a
               href="https://withmeapp.herokuapp.com/assets/Settings.png"
@@ -341,15 +327,15 @@
         jQuery('#carousel').owlCarousel({
           autoplay: true,
           lazyLoad: true,
-          loop: true,
+          loop: false,
           margin: 20,
 
           animateOut: 'slideOutDown',
           animateIn: 'flipInX',
-
+          stagePadding: '30',
           responsiveClass: true,
           autoHeight: true,
-          autoplayTimeout: 7000,
+          autoplayTimeout: 3000,
           smartSpeed: 450,
           nav: true,
           responsive: {
@@ -358,15 +344,15 @@
             },
 
             600: {
-              items: 3,
+              items: 2,
             },
 
             1024: {
-              items: 6,
+              items: 3,
             },
 
             1366: {
-              items: 6,
+              items: 3,
             },
           },
         });

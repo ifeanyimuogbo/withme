@@ -166,3 +166,69 @@ footer .copyrights {
   font-size: 16px;
   font-weight: 500;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575px) {
+  nav.navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background: rgba(255, 255, 255, 0);
+  }
+  .fixed-top {
+    position: static;
+  }
+  .whitehero {
+    height: 30vh;
+  }
+  .signal {
+    position: absolute;
+    z-index: 2;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    /* transform: scale(0.85); */
+  }
+  .signal svg {
+    height: auto;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  nav.navbar {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background: rgba(255, 255, 255, 0);
+  }
+  .fixed-top {
+    position: static;
+  }
+  .whitehero {
+    height: 30vh;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  nav.navbar {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background: rgba(255, 255, 255, 0);
+  }
+  .fixed-top {
+    position: static;
+  }
+  .whitehero {
+    height: 30vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

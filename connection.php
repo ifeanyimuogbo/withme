@@ -1,9 +1,9 @@
 <?php
 $email = filter_input(INPUT_POST, 'email');
-$host = "localhost";
-$dbusername = "dev";
-$dbpassword = "development";
-$dbname = "withme";
+$host = "us-cdbr-east-02.cleardb.com";
+$dbusername = "b354f1e0662a94";
+$dbpassword = "7527705d";
+$dbname = "heroku_ce8416662d4c93d";
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
 if (!empty($email)){

@@ -12,8 +12,9 @@
 }
 /* General Styles */
 html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
+
 * {
   padding: 0;
   border: 0;

@@ -10,9 +10,15 @@
   --primaryBlue: #0062f4;
   --lightBlueBg: #e5effe;
 }
+
 /* General Styles */
 html {
   overflow-x: hidden !important;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #000;
+  }
 }
 
 * {
@@ -173,7 +179,7 @@ footer .copyrights {
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   body {
     font-size: 1rem;
     margin: auto;
@@ -233,7 +239,7 @@ footer .copyrights {
 
   .previews {
     padding: 120px 3% 50px 3%;
-    background-image: url(./assets/withme.png);
+    background-image: url(../../assets/withme.png);
     background-repeat: no-repeat;
     background-position: top 15% right 1px;
     background-size: 70%;
@@ -316,7 +322,7 @@ footer .copyrights {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) {
   nav.navbar {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -328,12 +334,23 @@ footer .copyrights {
   .whitehero {
     height: 30vh;
   }
-}
+} */
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 680px) and (max-width: 991px) {
+  .previews {
+    padding: 180px 3% 50px 3%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1149px) {
+  .infodiv {
+    max-width: 533px;
+  }
+  .signal {
+    left: -14%;
+  }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+/* Extra large devices (large desktops, 1150px and up) */
+@media (min-width: 150px) {
 }

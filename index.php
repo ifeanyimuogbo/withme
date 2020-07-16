@@ -53,8 +53,8 @@
         <div class="mockup">
             <img src="assets/mockup.png" class="img-fluid" />
         </div>
-        <div class="col-12 col-md-3 whitehero" style="z-index: 2;"></div>
-        <div class="col-12 col-md-9 jumbo d-flex justify-content-center align-items-center mr-0">
+        <div class="col-12 col-lg-3 whitehero" style="z-index: 2;"></div>
+        <div class="col-12 col-lg-9 jumbo d-flex justify-content-center align-items-center mr-0">
             <div class="infodiv">
                 <h1>Get notified when your friends are near.</h1>
                 <p>Find out where your friends are and stay in touch with them</p>
@@ -64,7 +64,7 @@
                         <input type="email" class="form-control" id="email" name="email"
                             placeholder="Enter your email address here" />
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2" style="z-index: 3;">
+                    <button type="submit" class="btn btn-primary mb-2 ml-1" style="z-index: 3;">
                         Pre Register
                     </button>
 
@@ -171,7 +171,7 @@
                     <input type="email" class="form-control" id="email" name="email"
                         placeholder="Enter your email address here" />
                 </div>
-                <button type="submit" class="btn btn-primary mb-2" style="z-index: 3;">
+                <button type="submit" class="btn btn-primary mb-2 ml-1" style="z-index: 3;">
                     Pre Register
                 </button>
 

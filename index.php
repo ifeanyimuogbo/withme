@@ -23,7 +23,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-light bg-faded justify-content-between mt-2 mt-md-3">
+    <nav class="navbar fixed-top navbar-light bg-faded justify-content-between mt-1 mt-sm-2 mt-md-3">
         <a class="navbar-brand">
             <img src="assets/logo.svg" />
         </a>

@@ -62,7 +62,6 @@
 
                     <div class="form-group mx-sm-1 mb-2" style="z-index: 3;">
                         <input type="email" class="form-control" id="email" name="email"
-                            value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>"
                             placeholder="Enter your email address here" />
                     </div>
                     <button type="submit" class="btn btn-primary mb-2" style="z-index: 3;">
@@ -170,7 +169,6 @@
 
                 <div class="form-group mx-sm-1 mb-2">
                     <input type="email" class="form-control" id="email" name="email"
-                        value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>"
                         placeholder="Enter your email address here" />
                 </div>
                 <button type="submit" class="btn btn-primary mb-2" style="z-index: 3;">
@@ -184,7 +182,7 @@
         </div>
     </footer>
 
-    <script src="src/js/index.js" async defer></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -194,10 +192,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <!-- <script src="src/js/owlcarousel/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
     <script src="src/js/owlcarousel/owl.carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
-
+    <script src="src/js/index.js" async defer></script>
     <script>
     $(document).ready(function() {
         jQuery('#carousel').owlCarousel({

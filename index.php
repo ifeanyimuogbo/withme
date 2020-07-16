@@ -23,7 +23,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-light bg-faded justify-content-between mt-3">
+    <nav class="navbar fixed-top navbar-light bg-faded justify-content-between mt-2 mt-md-3">
         <a class="navbar-brand">
             <img src="assets/logo.svg" />
         </a>
@@ -201,16 +201,16 @@
             autoplay: true,
             lazyLoad: true,
             loop: false,
-            margin: 20,
+            margin: 10,
 
             animateOut: 'slideOutDown',
             animateIn: 'flipInX',
-            stagePadding: '30',
+            stagePadding: '15',
             responsiveClass: true,
             autoHeight: true,
             autoplayTimeout: 3000,
             smartSpeed: 450,
-            nav: true,
+            nav: false,
             responsive: {
                 0: {
                     items: 1,

@@ -19,19 +19,19 @@ html {
 
 @media screen and (min-width: 25em) {
   html {
-    font-size: calc(13px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
   }
 }
 
 /* Safari <8 and IE <11 */
 @media screen and (min-width: 25em) {
   html {
-    font-size: calc(13px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
   }
 }
 @media screen and (min-width: 50em) {
   html {
-    font-size: calc(13px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
   }
 }
 
@@ -47,6 +47,7 @@ body {
   font-weight: normal;
   color: #18345f;
   margin: auto;
+  overflow-x: hidden;
 }
 h1 {
   font-weight: bold;
@@ -213,8 +214,8 @@ footer .copyrights {
   }
   /* Navbar */
   nav.navbar {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background: rgba(255, 255, 255, 0);
   }
   .fixed-top {

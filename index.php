@@ -121,7 +121,7 @@
                 <circle cx="998.5" cy="512.5" r="12.5" fill="#0062F4" />
             </svg>
         </div>
-        <div class="smallcross wow animate__animated animate__rotateIn">
+        <div class="smallcross wow animate__animated animate__rotateIn animate__infinite animate__slower">
             <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="76" y1="4.37114e-08" x2="76" y2="150" stroke="#0062F4" stroke-opacity="0.5"
                     stroke-width="2" />
@@ -129,7 +129,7 @@
                     stroke-width="2" />
             </svg>
         </div>
-        <div class="smallccl wow animate__animated animate__heartBeat">
+        <div class="smallccl wow animate__animated animate__heartBeat animate__infinite">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="20" cy="20" r="20" fill="#0062F4" />
             </svg>

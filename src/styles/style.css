@@ -83,6 +83,9 @@ form {
 .pos-relative {
   position: relative;
 }
+.animate__slower {
+  --animate-duration: 5s;
+}
 /* Specific Classes */
 nav.navbar {
   padding-left: 10rem;

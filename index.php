@@ -58,7 +58,12 @@
         <div class="col-12 col-lg-3 whitehero" style="z-index: 2;"></div>
         <div class="col-12 col-lg-9 jumbo d-flex justify-content-center align-items-center mr-0">
             <div class="infodiv" id="prereg">
-                <h1>Get notified when your friends are near.</h1>
+                <div id="title-carousel" class="owl-carousel">
+                    <h1 class="item">Get notified when your friends are near.</h1>
+                    <h1 class="item">With•Me helps you stay connected to pals.</h1>
+                    <h1 class="item">Get connected even without an internet connection.</h1>
+                </div>
+
                 <p>Find out where your friends are and stay in touch with them</p>
                 <form class="form-inline" method="post" action="">
 
@@ -239,6 +244,38 @@
 
                 1366: {
                     items: 3,
+                },
+            },
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function() {
+        jQuery('#title-carousel').owlCarousel({
+            autoplay: true,
+            loop: true,
+            // animateOut: 'slideOutDown',
+            animateIn: 'slideOutDown',
+            responsiveClass: true,
+            autoHeight: true,
+            autoplayTimeout: 3000,
+            smartSpeed: 450,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+
+                600: {
+                    items: 1,
+                },
+
+                1024: {
+                    items: 1,
+                },
+
+                1366: {
+                    items: 1,
                 },
             },
         });

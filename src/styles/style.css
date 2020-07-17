@@ -48,7 +48,9 @@ button {
 form {
   flex-wrap: nowrap !important;
 }
-
+input[type='checkbox'] i {
+  color: #ffffff;
+}
 /* Reusable Classes */
 
 .padding-left-10 {
@@ -85,6 +87,12 @@ form {
 }
 .animate__slower {
   --animate-duration: 5s;
+}
+.toggle {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000003;
 }
 /* Specific Classes */
 nav.navbar {
@@ -129,6 +137,13 @@ nav .btn {
   position: relative;
   display: flex;
   max-width: 100%;
+}
+.preview-pane img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 .rect-27 {
   z-index: 3;

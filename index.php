@@ -13,6 +13,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="src/styles/owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="src/styles/owlcarousel/owl.theme.default.min.css" />
@@ -21,7 +23,7 @@
     <link rel="stylesheet" href="src/styles/style.css" />
 </head>
 
-<body>
+<body id='light'>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-light bg-faded justify-content-between mt-1 mt-sm-2 mt-md-3">
         <a class="navbar-brand">
@@ -37,7 +39,7 @@
 
     <!-- HERO -->
     <div class="vh-100 px-0 mx-0 row w-100 hero" style="position: relative;">
-        <div class="signal wow animate__animated animate__zoomIn animate__infinite animate__slower">
+        <div class="signal wow animate__animated animate__zoomIn animate__slower">
             <svg width="1015" height="1206" viewBox="0 0 1015 1206" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                     <circle cx="412" cy="603" r="107.5" stroke="#0062F4" stroke-opacity="0.8" />
@@ -52,7 +54,7 @@
                 <circle cx="151.5" cy="840.5" r="12.5" fill="#0062F4" />
             </svg>
         </div>
-        <div class="mockup">
+        <div class="mockup" id="mockup">
             <img src="assets/mockup.png" class="img-fluid" />
         </div>
         <div class="col-12 col-lg-3 whitehero" style="z-index: 2;"></div>
@@ -146,25 +148,29 @@
         <div class="col pr-0">
             <h1>Gallery</h1>
             <div id="carousel" class="owl-carousel mt-4">
-                <div class="item">
+                <div class="item" id="splash-gal">
                     <a href="https://withmeapp.herokuapp.com/assets/preview-splash.png" data-lightbox="gallery">
                         <img src="assets/preview-splash.png" class="img-fluid d-block" /></a>
                 </div>
-                <div class="item">
+                <div class="item" id="login-gal">
+                    <a href="https://withmeapp.herokuapp.com/assets/preview-login.png" data-lightbox="gallery">
+                        <img src="assets/preview-login.png" class="img-fluid d-block" /></a>
+                </div>
+                <div class="item" id="home-gal">
                     <a href="https://withmeapp.herokuapp.com/assets/preview-home.png" data-lightbox="gallery">
                         <img src="assets/preview-home.png" class="img-fluid d-block" /></a>
                 </div>
 
-                <div class="item">
+                <div class="item" id="settings-gal">
                     <a href="https://withmeapp.herokuapp.com/assets/preview-settings.png" data-lightbox="gallery">
                         <img src="assets/preview-settings.png" class="img-fluid d-block" /></a>
                 </div>
-                <div class="item">
+                <div class="item" id="profile-gal">
                     <a href="https://withmeapp.herokuapp.com/assets/preview-settingsprofile.png"
                         data-lightbox="gallery">
                         <img src="assets/preview-settingsprofile.png" class="img-fluid d-block" /></a>
                 </div>
-                <div class="item">
+                <div class="item" id="notifications-gal">
                     <a href="https://withmeapp.herokuapp.com/assets/preview-notifications.png" data-lightbox="gallery">
                         <img src="assets/preview-notifications.png" class="img-fluid d-block" /></a>
                 </div>
@@ -174,6 +180,10 @@
 
     <!-- Footer Section -->
     <footer class="container-fluid mx-0 px-0">
+        <input type="checkbox" id="lightmode" onclick="toggleLight()" onchange="handleToggle()" checked
+            data-toggle="toggle" data-on="<i class='fa fa-lightbulb-o'></i>  Light"
+            data-off="<i class='fa fa-lightbulb-o'></i>  Dark" data-onstyle="light" data-offstyle="dark"
+            data-size="xs" />
         <div class="d-flex flex-column flex-md-row justify-content-md-between foot py-max px-foot">
             <h1>Seems interesting?</h1>
             <form id="prereg" class="form-inline" method="post" action="">
@@ -192,7 +202,40 @@
             Copyright 2020 © with me
         </div>
     </footer>
+    <script>
+    function toggleLight() {
+        // Get the checkbox
+        var checkBox = document.getElementById('lightmode');
+        // Get the output text
+        var text = document.getElementById('text');
 
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == false) {
+            document.getElementById('light').style.background = '#fff';
+        } else if (checkBox.checked == true) {
+            document.getElementById('light').style.background = '#000';
+            // document.getElementById('mockup').innerHTML = "<img src='assets/dark-mockup.png' class='img-fluid'/>"
+            document.getElementById('splash-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assets/dark-notifications.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/dark-notifications.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('login-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assets/dark-login.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/dark-login.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('home-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assets/dark-home.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/dark-home.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('settings-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assetsdark-settings.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/dark-settings.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('profile-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assets/dark-settingsprofile.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/dark-settingsprofile.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('notifications-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assetsdark-notifications.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/dark-notifications.png' class = 'img-fluid d-block' / > " + " < /a>"
+        }
+    }
+    </script>
     <script src="src/js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -203,6 +246,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <!-- WOW JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>

@@ -13,9 +13,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="src/styles/owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="src/styles/owlcarousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
 
     <link rel="stylesheet" href="src/styles/style.css" />
@@ -35,7 +35,7 @@
 
     <!-- HERO -->
     <div class="vh-100 px-0 mx-0 row w-100 hero" style="position: relative;">
-        <div class="signal">
+        <div class="signal wow animate__animated animate__zoomIn">
             <svg width="1015" height="1206" viewBox="0 0 1015 1206" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                     <circle cx="412" cy="603" r="107.5" stroke="#0062F4" stroke-opacity="0.8" />
@@ -83,7 +83,7 @@
 
     <!-- Previews Section -->
     <div class="container-fluid mx-0 previews row">
-        <div class="preview-pane col-12">
+        <div class="preview-pane col-12 wow animate__animated animate__fadeInUp">
             <div class="rect-28">
                 <img src="assets/Rectangle28.png" class="d-block img-fluid" />
             </div>
@@ -119,7 +119,7 @@
                 <circle cx="998.5" cy="512.5" r="12.5" fill="#0062F4" />
             </svg>
         </div>
-        <div class="smallcross">
+        <div class="smallcross wow animate__animated animate__rotateIn">
             <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="76" y1="4.37114e-08" x2="76" y2="150" stroke="#0062F4" stroke-opacity="0.5"
                     stroke-width="2" />
@@ -127,7 +127,7 @@
                     stroke-width="2" />
             </svg>
         </div>
-        <div class="smallccl">
+        <div class="smallccl wow animate__animated animate__heartBeat">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="20" cy="20" r="20" fill="#0062F4" />
             </svg>
@@ -156,6 +156,10 @@
                     <a href="https://withmeapp.herokuapp.com/assets/preview-settingsprofile.png"
                         data-lightbox="gallery">
                         <img src="assets/preview-settingsprofile.png" class="img-fluid d-block" /></a>
+                </div>
+                <div class="item">
+                    <a href="https://withmeapp.herokuapp.com/assets/preview-notifications.png" data-lightbox="gallery">
+                        <img src="assets/preview-notifications.png" class="img-fluid d-block" /></a>
                 </div>
             </div>
         </div>
@@ -192,7 +196,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!-- WOW JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
     <script src="src/js/owlcarousel/jquery.min.js"></script>
     <script src="src/js/owlcarousel/owl.carousel.js"></script>
     <script>

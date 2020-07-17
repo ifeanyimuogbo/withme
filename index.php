@@ -211,7 +211,7 @@
     <script>
     $(document).ready(function() {
         jQuery('#carousel').owlCarousel({
-            autoplay: true,
+            autoplay: false,
             lazyLoad: true,
             loop: false,
             margin: 10,

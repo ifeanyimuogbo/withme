@@ -11,13 +11,27 @@
   --lightBlueBg: #e5effe;
 }
 
-/* General Styles */
 html {
+  font-size: 15px;
   overflow-x: hidden !important;
 }
-@media (prefers-color-scheme: dark) {
+/* Modern browsers only need this one */
+
+@media screen and (min-width: 25em) {
   html {
-    background-color: #000;
+    font-size: calc(13px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em) {
+  html {
+    font-size: calc(13px + (24 - 16) * (100vw - 400px) / (800 - 400));
+  }
+}
+@media screen and (min-width: 50em) {
+  html {
+    font-size: calc(13px + (24 - 16) * (100vw - 400px) / (800 - 400));
   }
 }
 
@@ -190,6 +204,12 @@ footer .copyrights {
   h1 {
     font-weight: bold;
     font-size: 2rem;
+  }
+  button {
+    white-space: nowrap !important;
+  }
+  form {
+    flex-wrap: nowrap !important;
   }
   /* Navbar */
   nav.navbar {

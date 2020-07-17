@@ -182,8 +182,8 @@
     <footer class="container-fluid mx-0 px-0">
         <input type="checkbox" id="lightmode" onclick="toggleLight()" onchange="handleToggle()" checked
             data-toggle="toggle" data-on="<i class='fa fa-lightbulb-o'></i>  Light"
-            data-off="<i class='fa fa-lightbulb-o'></i>  Dark" data-onstyle="light" data-offstyle="dark"
-            data-size="xs" />
+            data-off="<i class='fa fa-lightbulb-o'></i>  Dark" data-onstyle="light" data-offstyle="dark" data-size="sm"
+            data-style="ios" />
         <div class="d-flex flex-column flex-md-row justify-content-md-between foot py-max px-foot" id="footer">
             <h1>Seems interesting?</h1>
             <form id="prereg" class="form-inline" method="post" action="">
@@ -212,6 +212,31 @@
         // If the checkbox is checked, display the output text
         if (checkBox.checked == false) {
             document.getElementById('light').style.background = '#F27F7FE';
+
+            document.getElementById('mockup').innerHTML = '<img src="assets/mockup.png" class="img-fluid" />'
+            document.getElementById('light').style.color = '#18345f';
+            document.getElementById('jumbo').style.background = '#e5effe';
+            document.getElementById('footer').style.background = '#e5effe';
+            document.getElementById('copyrights').style.background = '#18345f';
+            // document.getElementById('mockup').innerHTML = "<img src='assets/dark-mockup.png' class='img-fluid'/>"
+            document.getElementById('splash-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assets/preview-settings.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/preview-settings.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('login-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assets/preview-login.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/preview-login.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('home-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assets/preview-home.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/preview-home.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('settings-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/preview-settings.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/preview-settings.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('profile-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/assets/preview-settingsprofile.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/preview-settingsprofile.png' class = 'img-fluid d-block' / > " + " < /a>"
+            document.getElementById('notifications-gal').innerHTML =
+                "<a href='https://withmeapp.herokuapp.com/preview-notifications.png' data-lightbox='gallery'>" +
+                "<img src = 'assets/preview-notifications.png' class = 'img-fluid d-block' / > " + " < /a>"
         } else if (checkBox.checked == true) {
             document.getElementById('mockup').innerHTML = '<img src="assets/dark-mockup.png" class="img-fluid" />'
             document.getElementById('light').style.background = '#0C0C0D';

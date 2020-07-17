@@ -15,25 +15,6 @@ html {
   font-size: 15px;
   overflow-x: hidden !important;
 }
-/* Modern browsers only need this one */
-
-@media screen and (min-width: 25em) {
-  html {
-    font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-
-/* Safari <8 and IE <11 */
-@media screen and (min-width: 25em) {
-  html {
-    font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
-@media screen and (min-width: 50em) {
-  html {
-    font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
-  }
-}
 
 * {
   padding: 0;
@@ -195,6 +176,25 @@ footer .copyrights {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 991px) {
+  /* Modern browsers only need this one */
+
+  @media screen and (min-width: 25em) {
+    html {
+      font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    }
+  }
+
+  /* Safari <8 and IE <11 */
+  @media screen and (min-width: 25em) {
+    html {
+      font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    }
+  }
+  @media screen and (min-width: 50em) {
+    html {
+      font-size: calc(14px + (24 - 16) * (100vw - 400px) / (800 - 400));
+    }
+  }
   body {
     font-size: 1rem;
     margin: auto;

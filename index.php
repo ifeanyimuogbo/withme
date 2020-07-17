@@ -198,7 +198,7 @@
 
             </form>
         </div>
-        <div class="d-flex justify-content-center copyrights py-3">
+        <div class="d-flex justify-content-center copyrights py-3" id="copyrights">
             Copyright 2020 © with me
         </div>
     </footer>
@@ -211,12 +211,14 @@
 
         // If the checkbox is checked, display the output text
         if (checkBox.checked == false) {
-            document.getElementById('light').style.background = '#fff';
+            document.getElementById('light').style.background = '#F27F7FE';
         } else if (checkBox.checked == true) {
-            document.getElementById('light').style.background = '#000';
+            document.getElementById('mockup').innerHTML = '<img src="assets/dark-mockup.png" class="img-fluid" />'
+            document.getElementById('light').style.background = '#0C0C0D';
             document.getElementById('light').style.color = '#fff';
             document.getElementById('jumbo').style.background = '#080808';
             document.getElementById('footer').style.background = '#080808';
+            document.getElementById('copyrights').style.background = '#080808';
             // document.getElementById('mockup').innerHTML = "<img src='assets/dark-mockup.png' class='img-fluid'/>"
             document.getElementById('splash-gal').innerHTML =
                 "<a href='https://withmeapp.herokuapp.com/assets/dark-notifications.png' data-lightbox='gallery'>" +

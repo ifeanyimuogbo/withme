@@ -58,7 +58,7 @@
             <img src="assets/mockup.png" class="img-fluid" />
         </div>
         <div class="col-12 col-lg-3 whitehero" style="z-index: 2;"></div>
-        <div class="col-12 col-lg-9 jumbo d-flex justify-content-center align-items-center mr-0">
+        <div class="col-12 col-lg-9 jumbo d-flex justify-content-center align-items-center mr-0" id="jumbo">
             <div class="infodiv" id="prereg">
                 <!-- <div id="title-carousel" class="owl-carousel"> -->
                 <h1 class="item">Get notified when your friends are near.</h1>
@@ -184,7 +184,7 @@
             data-toggle="toggle" data-on="<i class='fa fa-lightbulb-o'></i>  Light"
             data-off="<i class='fa fa-lightbulb-o'></i>  Dark" data-onstyle="light" data-offstyle="dark"
             data-size="xs" />
-        <div class="d-flex flex-column flex-md-row justify-content-md-between foot py-max px-foot">
+        <div class="d-flex flex-column flex-md-row justify-content-md-between foot py-max px-foot" id="footer">
             <h1>Seems interesting?</h1>
             <form id="prereg" class="form-inline" method="post" action="">
 
@@ -214,6 +214,9 @@
             document.getElementById('light').style.background = '#fff';
         } else if (checkBox.checked == true) {
             document.getElementById('light').style.background = '#000';
+            document.getElementById('light').style.color = '#fff';
+            document.getElementById('jumbo').style.background = '#080808';
+            document.getElementById('footer').style.background = '#080808';
             // document.getElementById('mockup').innerHTML = "<img src='assets/dark-mockup.png' class='img-fluid'/>"
             document.getElementById('splash-gal').innerHTML =
                 "<a href='https://withmeapp.herokuapp.com/assets/dark-notifications.png' data-lightbox='gallery'>" +

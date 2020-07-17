@@ -220,25 +220,19 @@
             document.getElementById('copyrights').style.background = '#18345f';
             // document.getElementById('mockup').innerHTML = "<img src='assets/dark-mockup.png' class='img-fluid'/>"
             document.getElementById('splash-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assets/preview-settings.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/preview-settings.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assets/preview-settings.png' data-lightbox='gallery'><img src = 'assets/preview-settings.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('login-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assets/preview-login.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/preview-login.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assets/preview-login.png' data-lightbox='gallery'><img src = 'assets/preview-login.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('home-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assets/preview-home.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/preview-home.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assets/preview-home.png' data-lightbox='gallery'><img src = 'assets/preview-home.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('settings-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/preview-settings.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/preview-settings.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/preview-settings.png' data-lightbox='gallery'><img src = 'assets/preview-settings.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('profile-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assets/preview-settingsprofile.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/preview-settingsprofile.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assets/preview-settingsprofile.png' data-lightbox='gallery'><img src = 'assets/preview-settingsprofile.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('notifications-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/preview-notifications.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/preview-notifications.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/preview-notifications.png' data-lightbox='gallery'><img src = 'assets/preview-notifications.png' class = 'img-fluid d-block'/></a>"
         } else if (checkBox.checked == true) {
-            document.getElementById('mockup').innerHTML = '<img src="assets/dark-mockup.png" class="img-fluid" />'
+            document.getElementById('mockup').innerHTML = '<img src="assets/dark-mockup.png" class="img-fluid"/>'
             document.getElementById('light').style.background = '#0C0C0D';
             document.getElementById('light').style.color = '#fff';
             document.getElementById('jumbo').style.background = '#080808';
@@ -246,23 +240,17 @@
             document.getElementById('copyrights').style.background = '#080808';
             // document.getElementById('mockup').innerHTML = "<img src='assets/dark-mockup.png' class='img-fluid'/>"
             document.getElementById('splash-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assets/dark-notifications.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/dark-notifications.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assets/dark-notifications.png' data-lightbox='gallery'><img src = 'assets/dark-notifications.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('login-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assets/dark-login.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/dark-login.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assets/dark-login.png' data-lightbox='gallery'><img src = 'assets/dark-login.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('home-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assets/dark-home.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/dark-home.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assets/dark-home.png' data-lightbox='gallery'><img src = 'assets/dark-home.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('settings-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assetsdark-settings.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/dark-settings.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assetsdark-settings.png' data-lightbox='gallery'><img src = 'assets/dark-settings.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('profile-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assets/dark-settingsprofile.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/dark-settingsprofile.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assets/dark-settingsprofile.png' data-lightbox='gallery'><img src = 'assets/dark-settingsprofile.png' class = 'img-fluid d-block'/></a>"
             document.getElementById('notifications-gal').innerHTML =
-                "<a href='https://withmeapp.herokuapp.com/assetsdark-notifications.png' data-lightbox='gallery'>" +
-                "<img src = 'assets/dark-notifications.png' class = 'img-fluid d-block' / > " + " < /a>"
+                "<a href='https://withmeapp.herokuapp.com/assetsdark-notifications.png' data-lightbox='gallery'><img src = 'assets/dark-notifications.png' class = 'img-fluid d-block'/> </a>"
         }
     }
     </script>

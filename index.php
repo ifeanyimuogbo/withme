@@ -211,7 +211,7 @@
 
         // If the checkbox is checked, display the output text
         if (checkBox.checked == false) {
-            document.getElementById('light').style.background = '#F27F7FE';
+            document.getElementById('light').style.background = '#F2F7FE';
 
             document.getElementById('mockup').innerHTML = '<img src="assets/mockup.png" class="img-fluid" />'
             document.getElementById('light').style.color = '#18345f';

@@ -109,11 +109,11 @@
                         Get notified when one of your contacts is present near you. Chat
                         and talk with them directly from the app.
                     </p>
-                    <hr />
+                    <hr class="wow animate__animated animate__slideInLeft" />
                 </div>
             </div>
         </div>
-        <div class="largecircl">
+        <div class=" largecircl">
             <svg width="1136" height="1426" viewBox="0 0 1136 1426" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="713" cy="713" r="712.5" stroke="#0062F4" stroke-opacity="0.5" />
                 <circle cx="998.5" cy="512.5" r="12.5" fill="#0062F4" />

@@ -27,10 +27,12 @@
         <a class="navbar-brand">
             <img src="assets/logo.svg" />
         </a>
+        <a href="#prereg">
+            <button class="btn" type="submit">
+                Pre Register
+            </button>
+        </a>
 
-        <button class="btn" type="submit">
-            Pre Register
-        </button>
     </nav>
 
     <!-- HERO -->

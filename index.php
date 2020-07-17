@@ -37,7 +37,7 @@
 
     <!-- HERO -->
     <div class="vh-100 px-0 mx-0 row w-100 hero" style="position: relative;">
-        <div class="signal wow animate__animated animate__zoomIn">
+        <div class="signal wow animate__animated animate__zoomIn animate__infinite animate__slower">
             <svg width="1015" height="1206" viewBox="0 0 1015 1206" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g opacity="0.5">
                     <circle cx="412" cy="603" r="107.5" stroke="#0062F4" stroke-opacity="0.8" />

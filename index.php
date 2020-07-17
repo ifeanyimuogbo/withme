@@ -57,10 +57,10 @@
         </div>
         <div class="col-12 col-lg-3 whitehero" style="z-index: 2;"></div>
         <div class="col-12 col-lg-9 jumbo d-flex justify-content-center align-items-center mr-0">
-            <div class="infodiv">
+            <div class="infodiv" id="prereg">
                 <h1>Get notified when your friends are near.</h1>
                 <p>Find out where your friends are and stay in touch with them</p>
-                <form id="prereg" class="form-inline" method="post" action="">
+                <form class="form-inline" method="post" action="">
 
                     <div class="form-group mx-sm-1 mb-2" style="z-index: 3;">
                         <input type="email" class="form-control" id="email" name="email"
